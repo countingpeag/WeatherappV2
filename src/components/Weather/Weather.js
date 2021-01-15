@@ -22,8 +22,7 @@ const Weather = ({temperature, state}) => {
     return (
         <div>
             <IconContext.Provider value={{ size: '5em'}}>
-                <WiCloud></WiCloud>
-                <WiCloud></WiCloud>
+                { renderState(state) }
             </IconContext.Provider>
             <Typography variant="h3" >{temperature}</Typography>
         </div>
@@ -31,7 +30,8 @@ const Weather = ({temperature, state}) => {
 }
 
 Weather.propTypes = {
-    teperature: PropTypes.number.isRequired
+    teperature: PropTypes.number.isRequired,
+    state: PropTypes.string.isRequired
 }
 
 export default Weather;
