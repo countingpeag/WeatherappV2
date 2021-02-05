@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const App = () => {
     return(
@@ -9,15 +9,24 @@ const App = () => {
                 <Switch>
                     <Route exact path="/">
                         Welcome
+                        <div>
+                            <Link to="/main">Go to main</Link>
+                        </div>
                     </Route>
                     <Route path="/main">
                         Main
                     </Route>
                     <Route path="/city">
                         City
+                        <div>
+                            <Link to="/main">Volver a main</Link>
+                        </div>
                     </Route>
                     <Route>
                         Not Found
+                        <div>
+                            <Link to="/main">Volver a main</Link>
+                        </div>
                     </Route>
                 </Switch>
             </Router>
