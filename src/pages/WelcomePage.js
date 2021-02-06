@@ -1,14 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
-const WelcomePage = ({}) => {
+const WelcomePage = () => {
     return(
-        <div>WelcomePage</div>
+        <div>
+            <Link to={"/main"}>Go to main</Link>
+        </div>
     )
-}
-
-WelcomePage.propTypes = {
-
 }
 
 export default WelcomePage;

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const CityPage = () => {
+const NotFoundPage = () => {
     return(
         <div>
-            <Link to={"/main"}>Go back to Main</Link>
+            <Link to={"/main"}>Go back to main</Link>
         </div>
     )
 }
 
-export default CityPage
+export default NotFoundPage
