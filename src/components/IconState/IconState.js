@@ -1,9 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { WiCloud, WiDayCloudy, WiDayFog, WiDaySunny, WiRain } from 'react-icons/wi'
-import { IconContext} from 'react-icons'
 
-const validValues = [
+export const validValues = [
     "cloud",
     "cloudy",
     "fog",
