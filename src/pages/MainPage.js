@@ -14,13 +14,12 @@ const MainPage = () => {
     const onClickHandler = () => {
         //history push allows change the URL by programming
         history.push("/city")
-
     }
 
     return (
         <div>
             <h2>City List</h2>
-            <CityList onClick={onClickHandler} cities={cities}/>
+            <CityList cities={cities} onClickCity={onClickHandler}/>
         </div>
     )
 }
