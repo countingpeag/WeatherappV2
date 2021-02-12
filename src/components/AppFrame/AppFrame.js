@@ -10,7 +10,7 @@ import { Link as LinkRouter } from 'react-router-dom'
 import { IconContext } from 'react-icons'
 import { WiDaySunny } from 'react-icons/wi'
 
-const AppFrame = () => {
+const AppFrame = ({ children }) => {
     return(
         <Grid container justify="center">
             <AppBar position="static">
@@ -27,13 +27,15 @@ const AppFrame = () => {
                     </Typography>
                 </Toolbar>
             </AppBar>
-            <Grid container item xs={12} sm={11} md={10} lg={8}>
-                My Application
+            <Grid item xs={12} sm={11} md={10} lg={8}>
+                { children }
             </Grid>
         </Grid>
     )
 }
 
-AppFrame.propTypes = {}
+AppFrame.propTypes = {
+    children: PropTypes.node
+}
 
 export default AppFrame;
